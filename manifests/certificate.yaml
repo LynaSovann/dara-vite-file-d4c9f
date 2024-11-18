@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dara-vite-file-d4c9f-certificate
+  namespace: dara-vite-file-d4c9f
+spec:
+  secretName: dara-vite-file-d4c9f-secret-tls
+  commonName: tan-dara9280-dara-vite-file.assessify.org
+  dnsNames:
+  - tan-dara9280-dara-vite-file.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
